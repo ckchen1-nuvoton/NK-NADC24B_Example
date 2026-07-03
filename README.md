@@ -35,6 +35,9 @@ The data flow is decoupled into an asynchronous hardware-to-software routine:
 1. **Hardware Signaling:** The NADC24B completes an internal conversion cycle and pulls the `/DRDY` line (`PA.4`) **LOW**.
 2. **Interrupt Handshake (`GPA_IRQHandler`):** The MCU catches the falling edge, clears the flag, and triggers an 8-bit SPI transaction to retrieve the raw 24-bit sample.
 3. **Sign Extension & Conversion:** * Formats the 24-bit raw stream into a standard 32-bit signed integer (`int32_t`).
+   * Calculates the true analog voltage using the following logic:
+     
+     `Volt = (s32AdcData / FULL_RANGE) * 2.4`
 
 ---
 
