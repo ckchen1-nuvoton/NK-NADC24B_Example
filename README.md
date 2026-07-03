@@ -1,4 +1,5 @@
-# Nuvoton M251 with NADC24B Weighting Sensor Application
+# Nuvoton M251 with NADC24B 
+# Weighting Sensor Application
 
 This project demonstrates how to interface the **Nuvoton M251 microcontroller** with the **NADC24B (24-bit Delta-Sigma ADC)** external module via SPI. It implements a high-precision, low-latency analog data acquisition system designed for electronic scale applications (e.g., weighing scales, counting scales, and refrigerant scales).
 
