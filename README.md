@@ -44,8 +44,3 @@ The data flow is decoupled into an asynchronous hardware-to-software routine:
 * **IDE:** Keil MDK uVision
 * **Clock:** 48MHz Internal High-Speed RC Oscillator (HIRC) as HCLK
 
-## 💻 Environment
-* **MCU:** Nuvoton NuMicro M251 Series (Cortex-M23 core)
-* **External ADC:** NADC24B Driver Board
-* **IDE:** Keil MDK uVision
-* **Clock:** 48MHz Internal High-Speed RC Oscillator (HIRC) as HCLK
